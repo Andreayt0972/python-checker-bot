@@ -23,7 +23,7 @@ async def sm(Client, message):
 <b>○</b> PROCESS: <b>□□□□□□□□□□ 0% </b>
 <b>○</b> CHECKING BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a></b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDEAYT01</b>"""
             msg = await message.reply_text(text=text,reply_to_message_id=message.message_id)
             await Client.send_chat_action(message.chat.id, "typing")
             find = maindb.find_one({"_id": message.from_user.id})
@@ -140,7 +140,7 @@ async def sm(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDEAYT01</b>"""
                                     await msg.edit_text(text)
                                     antidb.set(message.from_user.id, int(time.time()))
                                 elif 'id' not in json_first:
@@ -152,7 +152,7 @@ async def sm(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDEAYT01</b>"""
                                     await msg.edit_text(text)
                                     antidb.set(message.from_user.id, int(time.time()))
                                 else:
@@ -165,7 +165,7 @@ async def sm(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKING BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDEAYT01</b>"""
                                     await msg.edit_text(text)
                                     headers = {
                                     "authority": "www.dreamdomainservices.com.au",
@@ -271,7 +271,7 @@ async def sm(Client, message):
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> CREDIT LEFT: {credits_left}
 <b>○</b> TIME TAKEN: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDEAYT01</b>"""
                                             await msg.edit_text(lasttext)
                                             antidb.set(message.from_user.id, int(time.time()))
     
