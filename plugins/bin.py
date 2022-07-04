@@ -49,7 +49,7 @@ async def bin(Client, message):
 <b>○</b> Country: <b>{jsontext['data']['country']}({jsontext['data']['countryInfo']['emoji']})</b>
 <b>○</b> Dial Code: <b>{jsontext['data']['countryInfo']['dialCode']}</b>
 <b>○</b> Checked By: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>[{find['role']}]</b>
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT01 COMPRA EL BOT</b>"""
                             await msg.edit_text(text, disable_web_page_preview=True)
                         else:
                             await msg.edit_text("Error While Getting Bin Data.")
