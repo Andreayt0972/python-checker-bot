@@ -368,7 +368,7 @@ async def sa(Client, message):
                                                 await msg.edit_text(text)
                                                 r.set(message.from_user.id, int(time.time()))
     except ProxyError as e:
-        await msg.edit_text("PROXY DEAD PLEASE REPORT TO OWNER <code>@r0ld3x</code>")
+        await msg.edit_text("PROXY DEAD PLEASE REPORT TO OWNER <code>@ANDREAYT1</code>")
         await Client.send_message(chat_id=loggp, text="Proxy Dead In zo Gate")
     except Exception as e:
         await Client.send_message(chat_id=loggp, text=e)
