@@ -174,7 +174,7 @@ async def aa(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKING BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDEAYT01</b>"""
                                     await msg.edit_text(text)
                                     data = {
                                     'type':'card',
