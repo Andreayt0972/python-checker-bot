@@ -9,7 +9,7 @@ from pyrogram.types import (
     InlineKeyboardMarkup
 )
 
-@Client.on_message(filters.command(['price','buy' ,'purchase', f'buy@{BOT_USERNAME}' , f'price@{BOT_USERNAME}', f'purchase@{BOT_USERNAME}'],prefixes=['.','/','!'],case_sensitive=False) & filters.text)
+@Client.on_message(filters.command(['price','buy' ,'purchase', f'buy@{ANDREAYT1}' , f'price@{ANDREAYT1}', f'purchase@{ANDREAYT1}'],prefixes=['.','/','!'],case_sensitive=False) & filters.text)
 async def register(Client,message):
     try: 
         buttons = [[InlineKeyboardButton('🛒 BUY 🛒', callback_data='buy')]]
