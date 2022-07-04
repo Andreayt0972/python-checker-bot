@@ -24,7 +24,7 @@ async def so(Client, message):
 <b>○</b> PROCESS: <b>□□□□□□□□□□ 0% </b>
 <b>○</b> CHECKING BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a></b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDEAYT01</b>"""
             msg = await message.reply_text(text=text,reply_to_message_id=message.message_id)
             await Client.send_chat_action(message.chat.id, "typing")
             find = maindb.find_one({"_id": message.from_user.id})
@@ -36,8 +36,8 @@ async def so(Client, message):
                 await msg.edit_text("""<b>You comsumed all your credits. hit /buy to buy more credits. And now are demoted to a free user</b>""")
                 maindb.update_one({'_id': message.from_user.id},{
                     '$set': {
-                        "plan": "FREE PLAN",
-                        "role": "FREE USER",
+                        "plan": "FREE PLAN  COMPRA EL BOT @ANDEAYT01",
+                        "role": "FREE USER COMPRA EL BOT @ANDEAYT01",
                         "status": "F",
                         "credits": 0}}, upsert=False)
             else:
@@ -135,7 +135,7 @@ async def so(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDEAYT01</b>"""
                                     await msg.edit_text(text)
                                     antidb.set(message.from_user.id, int(time.time()))
                                 elif 'id' not in json_first:
@@ -147,7 +147,7 @@ async def so(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDEAYT01</b>"""
                                     await msg.edit_text(text)
                                     antidb.set(message.from_user.id, int(time.time()))
                                 else:
@@ -160,7 +160,7 @@ async def so(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKING BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDEAYT01</b>"""
                                     await msg.edit_text(text)
                                     headers = {
                                     "authority": "splootmarketing.com",
@@ -183,7 +183,7 @@ async def so(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKING BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKING: <b>{get_time_taken(started_time)}'s</b>
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDEAYT01</b>"""
                                     await msg.edit_text(text)
                                     try:
                                         if 'incorrect_zip' in res.text or 'Your card zip code is incorrect.' in res.text or 'The zip code you supplied failed validation' in res.text or 'card zip code is incorrect' in res.text: 
@@ -253,7 +253,7 @@ async def so(Client, message):
                                         await Client.send_message(chat_id=loggp, text=e)
                                     else:
                                         if response is None:
-                                            await msg.edit_text("PROXY DEAD PLEASE REPORT TO OWNER @r0ld3x")
+                                            await msg.edit_text("PROXY DEAD PLEASE REPORT TO OWNER @ANDREAYT01")
                                         else:
                                             credits = find['credits']
                                             credits_left = credits - 2
@@ -267,7 +267,7 @@ async def so(Client, message):
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> CREDIT LEFT: {credits_left}
 <b>○</b> TIME TAKEN: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT01</b>"""
                                             await msg.edit_text(lasttext)
                                             antidb.set(message.from_user.id, int(time.time()))
     
