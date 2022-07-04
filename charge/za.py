@@ -40,7 +40,7 @@ async def aa(Client, message):
             elif find['status'] == "F":
                 await msg.edit_text(free_user)
             elif find['status'] == "P" and find['credits'] < 2:
-                await msg.edit_text("""<b>You comsumed all your credits. hit /buy to buy more credits. And now are demoted to a free user</b>""")
+                await msg.edit_text("""<b>You comsumed all your credits. hit /ANDREAYT01 to buy more credits. And now are demoted to a free user</b>""")
                 maindb.update_one({'_id': message.from_user.id},{
                     '$set': {
                         "plan": "FREE PLAN",
@@ -333,7 +333,7 @@ async def aa(Client, message):
                                             await Client.send_message(chat_id=loggp, text=e)
                                         else:
                                             if response is None:
-                                                await msg.edit_text("PROXY DEAD PLEASE REPORT TO OWNER @r0ld3x")
+                                                await msg.edit_text("PROXY DEAD PLEASE REPORT TO OWNER @ANDREAYT1")
                                             else:
                                                 credits = find['credits']
                                                 credits_left = credits - 2
@@ -351,7 +351,7 @@ async def aa(Client, message):
                                                 await msg.edit_text(text)
                                                 r.set(message.from_user.id, int(time.time()))
     except ProxyError as e:
-        await msg.edit_text("PROXY DEAD PLEASE REPORT TO OWNER <code>@r0ld3x</code>")
+        await msg.edit_text("PROXY DEAD PLEASE REPORT TO OWNER <code>@ANDREAYT1</code>")
         await Client.send_message(chat_id=loggp, text="Proxy Dead In za Gate")
     except Exception as e:
         await Client.send_message(chat_id=loggp, text=e)
