@@ -45,9 +45,9 @@ async def sa(Client, message):
                     }, upsert=False)
             else:
                 r = redis.Redis(
-                    host="redis-18001.c82.us-east-1-2.ec2.cloud.redislabs.com",
-                    port=18001,
-                    password="eO00qpZScxQ6u1UsZ32Y94YuZ1J7pGWR",
+                    host="redis-19264.c11.us-east-1-3.ec2.cloud.redislabs.com",
+                    port=19264,
+                    password="vsn4Hkq82iXTpOu04rA51qHsFvzbsGdC",
                 )
                 antispam_time = int(r.get(message.from_user.id).decode("utf-8"))
                 spam_time = int(time.time()) - antispam_time
@@ -190,7 +190,7 @@ async def sa(Client, message):
 <b>○</b> BIN DATA: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [{find['role']}]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT01</b>"""
                                     await msg.edit_text(text)
                                     r.set(message.from_user.id, int(time.time()))
                                 elif 'sessionId' not in json_text:
@@ -202,7 +202,7 @@ async def sa(Client, message):
 <b>○</b> BIN DATA: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [{find['role']}]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT1</b>"""
                                     await msg.edit_text(text)
                                     r.set(message.from_user.id, int(time.time()))
                                 else:
@@ -248,7 +248,7 @@ async def sa(Client, message):
 <b>○</b> BIN DATA: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [{find['role']}]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT1</b>"""
                                         await msg.edit_text(text)
                                         r.set(message.from_user.id, int(time.time()))
                                     elif 'id' not in json_first:
@@ -260,7 +260,7 @@ async def sa(Client, message):
 <b>○</b> BIN DATA: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [{find['role']}]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT1</b>"""
                                         await msg.edit_text(text)
                                         r.set(message.from_user.id, int(time.time()))
                                     else:
@@ -274,7 +274,7 @@ async def sa(Client, message):
 <b>○</b> BIN DATA: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKING BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [{find['role']}]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT1 QUEESPERAS PARA COMPRAR EL BOT</b>"""
                                         await msg.edit_text(text)
                                         url = f"https://api.stripe.com/v1/payment_pages/{sessionId}/confirm"
                                         headers = {
@@ -309,7 +309,7 @@ async def sa(Client, message):
 <b>○</b> BIN DATA: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKING BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [{find['role']}]</b>
 <b>○</b> TIME TAKING: <b>{get_time_taken(started_time)}'s</b>
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT1</b>"""
                                         await msg.edit_text(text)
                                         try:
                                             if res.status_code == requests.codes.ok:
@@ -387,7 +387,7 @@ async def sa(Client, message):
 <b>○</b> CHECKING BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [{find['role']}]</b>
 <b>○</b> CREDITS LEFT: {credits_left}credits
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT1</b>"""
                                                 await msg.edit_text(text)
                                                 r.set(message.from_user.id, int(time.time()))
     except ProxyError as e:
