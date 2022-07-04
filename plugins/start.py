@@ -19,7 +19,7 @@ from pyrogram.types import (
 
 REPLY_MARKUP  = InlineKeyboardMarkup([
     [
-    InlineKeyboardButton('📒 MY ACCOUNT 📒', callback_data='myacc'),
+    InlineKeyboardButton('📒 CUENTA 📒', callback_data='CUENTA'),
     InlineKeyboardButton('🚪 GATES 🚪', callback_data='gates')
     ],
     [
