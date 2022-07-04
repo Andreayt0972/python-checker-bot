@@ -40,7 +40,7 @@ async def ca(Client, message):
 <b>○</b> PROCESS: <b>□□□□□□□□□□ 0% </b>
 <b>○</b> CHECKING BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a></b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT01</b>"""
             msg = await message.reply_text(text=text,reply_to_message_id=message.message_id)
             await Client.send_chat_action(message.chat.id, "typing")
             find = maindb.find_one({"_id": message.from_user.id})
@@ -148,7 +148,7 @@ async def ca(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT01</b>"""
                                     await msg.edit_text(text)
                                     antidb.set(message.from_user.id, int(time.time()))
                                 elif 'id' not in json_first:
@@ -160,7 +160,7 @@ async def ca(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT01</b>"""
                                     await msg.edit_text(text)
                                     antidb.set(message.from_user.id, int(time.time()))
                                 else:
@@ -173,7 +173,7 @@ async def ca(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKING BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKING: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT01</b>"""
                                     await msg.edit_text(text)
                                     data = f"level=8&levelstodel=&checkjavascript=1&other_discount_code=&username={get_username()}&password={password}&password2={password}&first_name={first_name}&last_name={last_name}&bemail={email}&bconfirmemail={email}&fullname=&gateway=stripe&CardType={vendor}&discount_code=&submit-checkout=1&javascriptok=1&javascriptok=1&payment_method_id={id}&AccountNumber={cc}&ExpirationMonth={mes}&ExpirationYear=ano"
                                     res = curl.post("https://my.smashgo.co/account/membership-checkout/?level=8",headers=headers,data=data)
@@ -265,11 +265,11 @@ async def ca(Client, message):
 <b>○</b> BIN INFO: <code>{bin}</code> - <b>{bin_data['data']['level']}</b> - <b>{bin_data['data']['type']}</b>
 <b>○</b> CHECKED BY: <b><a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a> [<i>{find['role']}</i>]</b>
 <b>○</b> TIME TAKEN: {get_time_taken(started_time)}'s
-<b>○</b> BOT BY: <b>@RoldexVerse</b>"""
+<b>○</b> BOT BY: <b>@ANDREAYT01</b>"""
                                         await msg.edit_text(lasttext)
                                         antidb.set(message.from_user.id, int(time.time()))
     except ProxyError as e:
-        await msg.edit_text("PROXY DEAD PLEASE REPORT TO OWNER <code>@r0ld3x</code>")
+        await msg.edit_text("PROXY DEAD PLEASE REPORT TO OWNER <code>@ANDREAYT01</code>")
         await Client.send_message(chat_id=loggp, text=proxy)
     except Exception as e:
         await Client.send_message(chat_id=loggp, text=e)
