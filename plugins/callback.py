@@ -72,12 +72,12 @@ async def myacc(Client, message , update):
 async def gates(Client, message,update):
   buttons = [
   [
-      InlineKeyboardButton('🎁 FREE 🎁', callback_data='free'), 
+      InlineKeyboardButton('🎁 GRATIS 🎁', callback_data='GRATIS'), 
       InlineKeyboardButton('💲 PAID 💲', callback_data='paid')
   ],
   [
       InlineKeyboardButton('🛠️ TOOLS 🛠️', callback_data='tools'),
-      InlineKeyboardButton('🚪 CLOSE 🚪', callback_data='close')
+      InlineKeyboardButton('🚪 CERRAR 🚪', callback_data='CERRAR')
 
   ]
   ]
@@ -247,8 +247,8 @@ async def extra(Client, message , update):
 async def buy(Client, message , update):
   buttons = [
     [
-        InlineKeyboardButton('🛒 BUY 🛒', url='https://t.me/r0ld3x'),
-        InlineKeyboardButton('ℹ CHANNEL ℹ', url='https://t.me/roldexverse')
+        InlineKeyboardButton('🛒 BUY 🛒', url='https://t.me/ANDREAYT01'),
+        InlineKeyboardButton('ℹ CHANNEL ℹ', url='https://t.me/ANDREACHK')
     ],
     [
         InlineKeyboardButton('↩️ RETURN ↩️', callback_data='gates'),
@@ -276,8 +276,8 @@ async def buy(Client, message , update):
 async def gen(Client, message , update):
   buttons = [
     [
-        InlineKeyboardButton('🛒 BUY 🛒', url='https://t.me/r0ld3x'),
-        InlineKeyboardButton('ℹ CHANNEL ℹ', url='https://t.me/roldexverse')
+        InlineKeyboardButton('🛒 BUY 🛒', url='https://t.me/ANDREAYT01'),
+        InlineKeyboardButton('ℹ CHANNEL ℹ', url='https://t.me/ANDREACHK')
     ],
     [
         InlineKeyboardButton('↩️ RETURN ↩️', callback_data='gates'),
